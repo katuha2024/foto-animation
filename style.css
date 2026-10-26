@@ -1,0 +1,29 @@
+/* Скидання базових відступів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Ховаємо скролбари */
+}
+
+body {
+  
+  background: url('./images/Gemini_Generated_Image_qruyhhqruyhhqruy.webp') no-repeat center center / cover;
+   width: 100%;
+   height: 100%;
+}
+
+/* Canvas розташовується поверх фону на весь екран */
+#leaves-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Кліки та скрол проходять крізь canvas */
+}
